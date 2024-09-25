@@ -12,7 +12,7 @@ management:
 features:
   java:
     additionalDependencies: 0.1.0
-    core: 3.30.1
+    core: 3.30.2
     examples: 2.81.3
     globalSecurity: 2.82.7
     globalSecurityCallbacks: 0.1.0
