@@ -15,9 +15,6 @@ import java.lang.String;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- * Error - Internal Server Error. The server encountered an unexpected condition that prevented it from fulfilling the request.
- */
 public class Error extends RuntimeException {
 
     /**
