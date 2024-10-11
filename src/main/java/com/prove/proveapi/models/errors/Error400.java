@@ -15,9 +15,6 @@ import java.lang.String;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- * Error400 - Bad Request. The server cannot process the request due to a client error.
- */
 public class Error400 extends RuntimeException {
 
     /**
