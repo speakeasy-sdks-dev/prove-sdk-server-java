@@ -136,11 +136,11 @@ Handling errors in this SDK should largely match your expectations. All operatio
 
 By default, an API error will throw a `models/errors/SDKError` exception. When custom error responses are specified for an operation, the SDK may also throw their associated exception. You can refer to respective *Errors* tables in SDK docs for more details on possible exception types for each operation. For example, the `v3TokenRequest` method throws the following exceptions:
 
-| Error Type             | Status Code            | Content Type           |
-| ---------------------- | ---------------------- | ---------------------- |
-| models/errors/Error400 | 400                    | application/json       |
-| models/errors/Error    | 500                    | application/json       |
-| models/errors/SDKError | 4XX, 5XX               | \*/\*                  |
+| Error Type             | Status Code | Content Type     |
+| ---------------------- | ----------- | ---------------- |
+| models/errors/Error400 | 400         | application/json |
+| models/errors/Error    | 500         | application/json |
+| models/errors/SDKError | 4XX, 5XX    | \*/\*            |
 
 ### Example
 
@@ -275,9 +275,9 @@ public class Application {
 
 This SDK supports the following security scheme globally:
 
-| Name                           | Type                           | Scheme                         |
-| ------------------------------ | ------------------------------ | ------------------------------ |
-| `clientID` `clientSecret`      | oauth2                         | OAuth2 Client Credentials Flow |
+| Name                      | Type   | Scheme                         |
+| ------------------------- | ------ | ------------------------------ |
+| `clientID` `clientSecret` | oauth2 | OAuth2 Client Credentials Flow |
 
 You can set the security parameters through the `security` builder method when initializing the SDK client instance. For example:
 ```java
